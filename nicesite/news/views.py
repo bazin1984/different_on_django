@@ -28,3 +28,4 @@ def view_news(request , news_id) :
         'news_item' : news_item
     }
     return render(request , 'news/view_news.html' , context)
+

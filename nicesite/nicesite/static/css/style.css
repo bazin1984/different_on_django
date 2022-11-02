@@ -1,0 +1,32 @@
+body{
+    background-color : black;
+}
+.card{
+    background-color : grey;
+}
+.list-group-item{
+    background-color : black;
+    color : yellow
+}
+.btn{
+    background-color : black;
+    color : yellow;
+}
+.card-footer {
+	box-sizing: border-box;
+
+	background: black;
+	padding: 5px;
+	color: yellow;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Arial, Helvetica;
+	text-align: left;
+	overflow: hidden;
+}
+.card-title{
+    color : yellow;
+}
+.card-header{
+    background: black;
+    color : yellow;
+}

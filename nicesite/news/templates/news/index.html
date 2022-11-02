@@ -12,7 +12,7 @@
 {% for i in news %}
 <div class="card mb-3">
     <div class="card-header">
-        Категория : <a href="{{ i.category.get_absolute_url }}">{{ i.category }}</a>
+        Категория: <a style="color:white" href="{{ i.category.get_absolute_url }}">{{ i.category }}</a>
     </div>
     <div class="card-body">
         <div class="media">
@@ -20,13 +20,13 @@
             <img src="{{ i.photo.url }}" alt="" width="650" class="mr-5">
             {% endif %}
             <div class="media-body">
-                <h5 class="card-title text-danger">{{ i.title }}</h5>
+                <h5 class="card-title">{{ i.title }}</h5>
                 <p class="card-text">{{ i.content|truncatewords:100 }}</p>
                 <a href="{{ i.get_absolute_url }}" class="btn btn-primary">Read more...</a>
             </div>
         </div>
     </div>
-    <div class="card-footer text-muted">
+    <div class="card-footer">
         {{ i.created_at|date:"d.M.Y" }}
     </div>
 </div>

@@ -1,4 +1,4 @@
-{% extends 'base.html.' %}
+{% extends 'base.html' %}
 
 {% block title %}{{ category.title }}{% endblock %}
 
@@ -10,7 +10,7 @@
 {% for i in news %}
 <div class="card mb-3">
     <div class="card-header">
-        Категория : {{ i.category }}
+        Категория :{{ i.category }}
     </div>
     <div class="card-body">
         <div class="media">
@@ -18,7 +18,7 @@
             <img src="{{ i.photo.url }}" alt="" width="500" class="mr-5">
             {% endif %}
             <div class="media-body">
-                <h5 class="card-title text-danger">{{ i.title }}</h5>
+                <h5 class="card-title">{{ i.title }}</h5>
                 <p class="card-text">{{ i.content|truncatewords:100 }}</p>
                 <a href="{{ i.get_absolute_url }}" class="btn btn-primary">Read more...</a>
             </div>
